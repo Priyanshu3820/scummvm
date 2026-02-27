@@ -1032,6 +1032,9 @@ ThemeEngine::FontColor ListWidget::getThemeColor(const Common::U32String &color)
 	if (color == "alternate")
 		return ThemeEngine::kFontColorAlternate;
 
+	if (color == "override")
+		return ThemeEngine::kFontColorOverride;
+
 	warning("ListWidget::getThemeColor(): Malformed color (\"%s\")", color.encode().c_str());
 
 	return ThemeEngine::kFontColorNormal;
